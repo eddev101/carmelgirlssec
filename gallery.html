@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Carmel Girls Secondary School, Arusha</title>
+  <meta name="description" content="Photo gallery of campus life, academics, sports and events at Carmel Girls Secondary School, Arusha.">
+  <meta name="theme-color" content="#6b1d2a">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Gallery</div>
+      <h1>Gallery</h1>
+      <p>Moments from the classroom, the dining hall, the field and beyond.</p>
+    </div>
+    <svg class="hero__mountain" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path fill="rgba(255,255,255,.07)" d="M0 220V150l240-30 240-60 140-40 80 20 120 50 220 20 220-30 180 40v100z"/><path fill="#faf6ef" d="M0 220v-30q360-40 720-15t720-5v50z"/></svg>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="campus">Campus</button>
+        <button class="tab-btn" data-filter="academics">Academics</button>
+        <button class="tab-btn" data-filter="sports">Sports</button>
+        <button class="tab-btn" data-filter="events">Events</button>
+      </div>
+      <!-- To use real photos: put images in /images and add <img src="images/your-photo.jpg" alt="..."> inside each .photo -->
+      <div class="gallery">
+        <button class="gallery__item" data-cat="campus" data-caption="Main administration block"><div class="photo"><div class="photo__label">Main building</div></div></button>
+        <button class="gallery__item" data-cat="academics" data-caption="Chemistry practical session"><div class="photo photo--green"><div class="photo__label">Chemistry lab</div></div></button>
+        <button class="gallery__item" data-cat="sports" data-caption="Netball team in action"><div class="photo photo--gold"><div class="photo__label">Netball</div></div></button>
+        <button class="gallery__item" data-cat="events" data-caption="Parents' Day celebrations"><div class="photo"><div class="photo__label">Parents' Day</div></div></button>
+        <button class="gallery__item" data-cat="campus" data-caption="School library"><div class="photo photo--gold"><div class="photo__label">Library</div></div></button>
+        <button class="gallery__item" data-cat="academics" data-caption="Students in class"><div class="photo"><div class="photo__label">Classroom</div></div></button>
+        <button class="gallery__item" data-cat="events" data-caption="Graduation ceremony"><div class="photo photo--green"><div class="photo__label">Graduation</div></div></button>
+        <button class="gallery__item" data-cat="sports" data-caption="Inter-house athletics"><div class="photo"><div class="photo__label">Athletics</div></div></button>
+        <button class="gallery__item" data-cat="campus" data-caption="Dormitories and gardens"><div class="photo photo--green"><div class="photo__label">Dormitories</div></div></button>
+        <button class="gallery__item" data-cat="events" data-caption="Choir performance"><div class="photo photo--gold"><div class="photo__label">Choir</div></div></button>
+        <button class="gallery__item" data-cat="academics" data-caption="Science exhibition"><div class="photo"><div class="photo__label">Science fair</div></div></button>
+        <button class="gallery__item" data-cat="sports" data-caption="Volleyball tournament"><div class="photo photo--green"><div class="photo__label">Volleyball</div></div></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox__close" aria-label="Close">×</button>
+  <div class="lightbox__content"><div class="lightbox__media"></div><p class="lightbox__caption"></p></div>
+</div>
+
+<div id="site-footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
